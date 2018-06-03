@@ -1,0 +1,158 @@
+:root {
+  --blue: rgba(77,208,225 ,1);
+  --bluer: rgba(0,151,167 ,1);
+  --orange: rgba(255,152,0 ,1);
+  --oranger: rgba(239,108,0 ,1);
+  --purple: rgba(103,58,183 ,1);
+  --purpler: rgba(49,27,146 ,1);
+  --gray: rgba(176, 190, 197, 1);
+  --grayer: rgba(120, 144, 155, 1);
+  --green: rgba(56,142,60 ,1);
+  --greener: rgba(27,94,32 ,1);
+  --lightGray: rgba(238,238,238 ,1) ;
+  --lightGrayer: rgba(96,125,139 ,1);
+  --lightFontColor: rgba(255, 255, 255, 1);
+  --darkFontColor: rgba(33, 47, 41, 1);
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px/30px sans-serif;
+  background: url('../images/what-the-hex/what-the-hex.png')
+}
+
+/* Button styles! */
+
+button {
+  padding: 10px;
+  border: 0;
+  border-radius: 3px;
+  background: white;
+  cursor: pointer;
+  background: var(--gray);
+  border-bottom: 3px solid var(--grayer);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--lightFontColor);
+  font-weight: 300;
+  outline: none;
+}
+
+button:hover {
+  background: var(--grayer);
+  outline: none;
+}
+
+.container {
+  margin: auto 150px;
+}
+
+.btn-active {
+  background: var(--green);
+  border-color: var(--greener);
+}
+
+.btn-active:hover {
+  background: var(--greener);
+}
+
+.btn-default {
+  /*border: 1px solid var(--lightGray);*/
+  color: var(--darkFontColor);
+  background: var(--lightGray);
+  border-color: var(--lightGrayer);
+}
+
+.btn-default:hover {
+  background: var(--lightGrayer);
+}
+
+.btn-previous {
+  background: var(--purple);
+  border-color: var(--purpler);
+}
+
+.btn-previous:hover {
+  background: var(--purpler);
+}
+
+.btn-later {
+  background: var(--orange);
+  border-color: var(--oranger);
+}
+
+.btn-later:hover {
+  background: var(--oranger);
+}
+
+.btn-next {
+  background: var(--blue);
+  border-color: var(--bluer);
+}
+
+.btn-next:hover {
+  background: var(--bluer);
+}
+
+.btn-next:after {
+  /*content: "f054";*/
+}
+
+/* Sidebars! */
+
+.sidebar {
+  padding: 20px;
+}
+
+/* Numbers! */
+
+.numbers > button {
+  padding: 5px;
+}
+
+/* Card styles! */
+
+.card {
+  border-radius: 5px;
+  border: 2px solid var(--gray);
+  border-bottom: 3px solid var(--grayer);
+  display: none;
+  transition: all 0.5s ease;
+  background: white;
+  width: 70vw;
+}
+
+.card > * {
+  padding: 10px;
+}
+
+.card .card-header {
+  font-size: 15px;
+  font-weight: bold;
+  background: var(--gray);
+  border-bottom: 2px solid var(--gray);
+}
+
+/* Options! */
+.options > button {
+  font-size: 20px;
+}
+
+/* Controls! */
+
+.controls > button {
+  font-size: 1.3em;
+}
+
+@media (max-width: 700px) {
+  .container {
+    margin: 0;
+  }
+}
